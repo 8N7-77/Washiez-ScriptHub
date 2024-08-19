@@ -221,7 +221,7 @@ ImageLabel_2.Image = "http://www.roblox.com/asset/?id=17757765730"
 
 -- Scripts:
 
-local function MVYJIP_fake_script() -- wip.LocalScript 
+local function PPXXZMG_fake_script() -- wip.LocalScript 
 	local script = Instance.new('LocalScript', wip)
 
 	local scrollingframe = script.Parent.Parent.Parent.ScrollingFrame
@@ -232,8 +232,8 @@ local function MVYJIP_fake_script() -- wip.LocalScript
 		credits.Visible = true
 	end)
 end
-coroutine.wrap(MVYJIP_fake_script)()
-local function ZYXDKR_fake_script() -- wip_2.LocalScript 
+coroutine.wrap(PPXXZMG_fake_script)()
+local function SNDZ_fake_script() -- wip_2.LocalScript 
 	local script = Instance.new('LocalScript', wip_2)
 
 	local scrollingframe = script.Parent.Parent.Parent.ScrollingFrame
@@ -245,7 +245,7 @@ local function ZYXDKR_fake_script() -- wip_2.LocalScript
 		else
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "ERROR: 642";
-				Text = "Script is already visable!";
+				Text = "ScriptHub is already visable!";
 				Icon = "";
 	
 	
@@ -256,8 +256,8 @@ local function ZYXDKR_fake_script() -- wip_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZYXDKR_fake_script)()
-local function BJJL_fake_script() -- UF.LocalScript 
+coroutine.wrap(SNDZ_fake_script)()
+local function TJTIH_fake_script() -- UF.LocalScript 
 	local script = Instance.new('LocalScript', UF)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -284,24 +284,24 @@ local function BJJL_fake_script() -- UF.LocalScript
 	
 	end)
 end
-coroutine.wrap(BJJL_fake_script)()
-local function RFKL_fake_script() -- CX.LocalScript 
+coroutine.wrap(TJTIH_fake_script)()
+local function QUUBT_fake_script() -- CX.LocalScript 
 	local script = Instance.new('LocalScript', CX)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
 	end)
 end
-coroutine.wrap(RFKL_fake_script)()
-local function QRMQ_fake_script() -- IYWS.LocalScript 
+coroutine.wrap(QUUBT_fake_script)()
+local function CNTXFXR_fake_script() -- IYWS.LocalScript 
 	local script = Instance.new('LocalScript', IYWS)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(QRMQ_fake_script)()
-local function CHXXX_fake_script() -- Frame.Drag 
+coroutine.wrap(CNTXFXR_fake_script)()
+local function PLZAEI_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -344,4 +344,4 @@ local function CHXXX_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(CHXXX_fake_script)()
+coroutine.wrap(PLZAEI_fake_script)()
