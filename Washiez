@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+local CoreGui = game:GetService("CoreGui")
 local Exploitiez = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
@@ -40,7 +45,7 @@ local TextLabel_13 = Instance.new("TextLabel")
 --Properties:
 
 Exploitiez.Name = "Exploitiez"
-Exploitiez.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Exploitiez.Parent = game.CoreGui
 Exploitiez.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = Exploitiez
@@ -99,7 +104,6 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Size = UDim2.new(0, 377, 0, 158)
 ScrollingFrame.BottomImage = ""
-ScrollingFrame.CanvasPosition = Vector2.new(0, 158)
 ScrollingFrame.TopImage = ""
 
 FS.Name = "FS"
@@ -291,7 +295,7 @@ TextLabel_7.BorderSizePixel = 0
 TextLabel_7.Position = UDim2.new(0.0265251994, 0, 0.556962013, 0)
 TextLabel_7.Size = UDim2.new(0, 357, 0, 50)
 TextLabel_7.Font = Enum.Font.SourceSansBold
-TextLabel_7.Text = "Update: 0.1.3"
+TextLabel_7.Text = "Update: 0.1.4"
 TextLabel_7.TextColor3 = Color3.fromRGB(212, 212, 212)
 TextLabel_7.TextSize = 34.000
 
@@ -487,31 +491,31 @@ TextLabel_13.TextWrapped = true
 
 -- Scripts:
 
-local function TUSJ_fake_script() -- FS.LocalScript 
+local function HUXO_fake_script() -- FS.LocalScript 
 	local script = Instance.new('LocalScript', FS)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/8N7-77/WashiezFlingScript/main/Fling'))()
 	end)
 end
-coroutine.wrap(TUSJ_fake_script)()
-local function HQBINQP_fake_script() -- IYScript.LocalScript 
+coroutine.wrap(HUXO_fake_script)()
+local function WYRNPNU_fake_script() -- IYScript.LocalScript 
 	local script = Instance.new('LocalScript', IYScript)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(HQBINQP_fake_script)()
-local function OYZTRMC_fake_script() -- CX.LocalScript 
+coroutine.wrap(WYRNPNU_fake_script)()
+local function JIAL_fake_script() -- CX.LocalScript 
 	local script = Instance.new('LocalScript', CX)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
 	end)
 end
-coroutine.wrap(OYZTRMC_fake_script)()
-local function GLDLWKB_fake_script() -- HAC.LocalScript 
+coroutine.wrap(JIAL_fake_script)()
+local function XQFN_fake_script() -- HAC.LocalScript 
 	local script = Instance.new('LocalScript', HAC)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -522,8 +526,8 @@ local function GLDLWKB_fake_script() -- HAC.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GLDLWKB_fake_script)()
-local function ULMX_fake_script() -- Updatelogs.LocalScript 
+coroutine.wrap(XQFN_fake_script)()
+local function SSVO_fake_script() -- Updatelogs.LocalScript 
 	local script = Instance.new('LocalScript', Updatelogs)
 
 	local udlogs = script.Parent.Parent.Parent.UDLOGS
@@ -550,8 +554,8 @@ local function ULMX_fake_script() -- Updatelogs.LocalScript
 	end)
 	
 end
-coroutine.wrap(ULMX_fake_script)()
-local function RVHMOU_fake_script() -- ScriptHubB.LocalScript 
+coroutine.wrap(SSVO_fake_script)()
+local function ZVTFZ_fake_script() -- ScriptHubB.LocalScript 
 	local script = Instance.new('LocalScript', ScriptHubB)
 
 	local udlogs = script.Parent.Parent.Parent.UDLOGS
@@ -578,8 +582,8 @@ local function RVHMOU_fake_script() -- ScriptHubB.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RVHMOU_fake_script)()
-local function OTUHNWD_fake_script() -- Credits.LocalScript 
+coroutine.wrap(ZVTFZ_fake_script)()
+local function HEZS_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	local CreditFrame = script.Parent.Parent.Parent.CreditFrane
@@ -606,8 +610,8 @@ local function OTUHNWD_fake_script() -- Credits.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(OTUHNWD_fake_script)()
-local function ICXYK_fake_script() -- ScriptBox.LocalScript 
+coroutine.wrap(HEZS_fake_script)()
+local function DHQY_fake_script() -- ScriptBox.LocalScript 
 	local script = Instance.new('LocalScript', ScriptBox)
 
 	local CreditFrame = script.Parent.Parent.Parent.CreditFrane
@@ -633,8 +637,8 @@ local function ICXYK_fake_script() -- ScriptBox.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ICXYK_fake_script)()
-local function EXIUO_fake_script() -- Frame.Drag 
+coroutine.wrap(DHQY_fake_script)()
+local function DEIC_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -677,4 +681,4 @@ local function EXIUO_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(EXIUO_fake_script)()
+coroutine.wrap(DEIC_fake_script)()
