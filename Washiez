@@ -13,6 +13,7 @@ local ScrollingFrame = Instance.new("ScrollingFrame")
 local FS = Instance.new("TextButton")
 local IYScript = Instance.new("TextButton")
 local CX = Instance.new("TextButton")
+local HAC = Instance.new("TextButton")
 local Frame_3 = Instance.new("Frame")
 local Updatelogs = Instance.new("TextButton")
 local ScriptHubB = Instance.new("TextButton")
@@ -36,6 +37,8 @@ local Title_2 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local TextLabel_9 = Instance.new("TextLabel")
 local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -99,6 +102,7 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Size = UDim2.new(0, 377, 0, 158)
 ScrollingFrame.BottomImage = ""
+ScrollingFrame.CanvasPosition = Vector2.new(0, 158)
 ScrollingFrame.TopImage = ""
 
 FS.Name = "FS"
@@ -142,6 +146,20 @@ CX.TextColor3 = Color3.fromRGB(221, 221, 221)
 CX.TextScaled = true
 CX.TextSize = 38.000
 CX.TextWrapped = true
+
+HAC.Name = "HAC"
+HAC.Parent = ScrollingFrame
+HAC.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+HAC.BorderColor3 = Color3.fromRGB(91, 91, 91)
+HAC.BorderSizePixel = 2
+HAC.Position = UDim2.new(0.0291777197, 0, 0.611392617, 0)
+HAC.Size = UDim2.new(0, 346, 0, 50)
+HAC.Font = Enum.Font.SourceSans
+HAC.Text = "HighLight all Cars"
+HAC.TextColor3 = Color3.fromRGB(221, 221, 221)
+HAC.TextScaled = true
+HAC.TextSize = 38.000
+HAC.TextWrapped = true
 
 Frame_3.Parent = Frame
 Frame_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
@@ -217,6 +235,7 @@ ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame_2.BorderSizePixel = 0
 ScrollingFrame_2.Size = UDim2.new(0, 377, 0, 158)
 ScrollingFrame_2.BottomImage = ""
+ScrollingFrame_2.CanvasPosition = Vector2.new(0, 158)
 ScrollingFrame_2.TopImage = ""
 
 TextLabel_3.Parent = ScrollingFrame_2
@@ -344,6 +363,11 @@ ScrollingFrame_3.BackgroundTransparency = 1.000
 ScrollingFrame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame_3.BorderSizePixel = 0
 ScrollingFrame_3.Size = UDim2.new(0, 377, 0, 158)
+ScrollingFrame_3.BottomImage = ""
+ScrollingFrame_3.CanvasPosition = Vector2.new(0, 258)
+ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 2, 100)
+ScrollingFrame_3.ScrollBarThickness = 8
+ScrollingFrame_3.TopImage = ""
 
 TextLabel_7.Parent = ScrollingFrame_3
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -412,33 +436,72 @@ TextLabel_10.TextColor3 = Color3.fromRGB(165, 165, 165)
 TextLabel_10.TextSize = 14.000
 TextLabel_10.TextWrapped = true
 
+TextLabel_11.Parent = ScrollingFrame_3
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.0477453582, 0, 0.708121359, 0)
+TextLabel_11.Size = UDim2.new(0, 340, 0, 94)
+TextLabel_11.Font = Enum.Font.SourceSansBold
+TextLabel_11.Text = "Lets say i wanna highlight all the cars thats currently in the game!"
+TextLabel_11.TextColor3 = Color3.fromRGB(165, 165, 165)
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+TextLabel_12.Parent = ScrollingFrame_3
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.0450928397, 0, 0.847025454, 0)
+TextLabel_12.Size = UDim2.new(0, 340, 0, 78)
+TextLabel_12.Font = Enum.Font.SourceSansBold
+TextLabel_12.Text = "local SpawnedCars = game:GetService(\"Workspace\").SpawnedCars\\nfor _, SpawnedCars in pairs(SpawnedCars:GetChildren()) do\\n	local hightlight = Instance.new(\"Highlight\")\\n	hightlight.Parent = SpawnedCars\\nend\\n"
+TextLabel_12.TextColor3 = Color3.fromRGB(165, 165, 165)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
 -- Scripts:
 
-local function LMBIMUP_fake_script() -- FS.LocalScript 
+local function MDNKFIE_fake_script() -- FS.LocalScript 
 	local script = Instance.new('LocalScript', FS)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/8N7-77/WashiezFlingScript/main/Fling'))()
 	end)
 end
-coroutine.wrap(LMBIMUP_fake_script)()
-local function MBOYSU_fake_script() -- IYScript.LocalScript 
+coroutine.wrap(MDNKFIE_fake_script)()
+local function EKCDYCO_fake_script() -- IYScript.LocalScript 
 	local script = Instance.new('LocalScript', IYScript)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(MBOYSU_fake_script)()
-local function FYWMLR_fake_script() -- CX.LocalScript 
+coroutine.wrap(EKCDYCO_fake_script)()
+local function XPPCWH_fake_script() -- CX.LocalScript 
 	local script = Instance.new('LocalScript', CX)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
 	end)
 end
-coroutine.wrap(FYWMLR_fake_script)()
-local function QNCVQS_fake_script() -- Updatelogs.LocalScript 
+coroutine.wrap(XPPCWH_fake_script)()
+local function LXPAV_fake_script() -- HAC.LocalScript 
+	local script = Instance.new('LocalScript', HAC)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local SpawnedCars = game:GetService("Workspace").SpawnedCars
+		for _, SpawnedCars in pairs(SpawnedCars:GetChildren()) do
+			local hightlight = Instance.new("Highlight")
+			hightlight.Parent = SpawnedCars
+		end
+	end)
+end
+coroutine.wrap(LXPAV_fake_script)()
+local function HPNHIQU_fake_script() -- Updatelogs.LocalScript 
 	local script = Instance.new('LocalScript', Updatelogs)
 
 	local udlogs = script.Parent.Parent.Parent.UDLOGS
@@ -465,8 +528,8 @@ local function QNCVQS_fake_script() -- Updatelogs.LocalScript
 	end)
 	
 end
-coroutine.wrap(QNCVQS_fake_script)()
-local function TLQIC_fake_script() -- ScriptHubB.LocalScript 
+coroutine.wrap(HPNHIQU_fake_script)()
+local function QSYYEQW_fake_script() -- ScriptHubB.LocalScript 
 	local script = Instance.new('LocalScript', ScriptHubB)
 
 	local udlogs = script.Parent.Parent.Parent.UDLOGS
@@ -493,8 +556,8 @@ local function TLQIC_fake_script() -- ScriptHubB.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TLQIC_fake_script)()
-local function CYTVMO_fake_script() -- Credits.LocalScript 
+coroutine.wrap(QSYYEQW_fake_script)()
+local function TETHMDU_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	local CreditFrame = script.Parent.Parent.Parent.CreditFrane
@@ -521,8 +584,8 @@ local function CYTVMO_fake_script() -- Credits.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(CYTVMO_fake_script)()
-local function JHMYKIB_fake_script() -- ScriptBox.LocalScript 
+coroutine.wrap(TETHMDU_fake_script)()
+local function RLMJHWI_fake_script() -- ScriptBox.LocalScript 
 	local script = Instance.new('LocalScript', ScriptBox)
 
 	local CreditFrame = script.Parent.Parent.Parent.CreditFrane
@@ -548,8 +611,8 @@ local function JHMYKIB_fake_script() -- ScriptBox.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JHMYKIB_fake_script)()
-local function BKSCDLW_fake_script() -- Frame.Drag 
+coroutine.wrap(RLMJHWI_fake_script)()
+local function KNCH_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -592,4 +655,4 @@ local function BKSCDLW_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(BKSCDLW_fake_script)()
+coroutine.wrap(KNCH_fake_script)()
