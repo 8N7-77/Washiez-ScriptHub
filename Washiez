@@ -17,15 +17,25 @@ local Frame_3 = Instance.new("Frame")
 local Updatelogs = Instance.new("TextButton")
 local ScriptHubB = Instance.new("TextButton")
 local Credits = Instance.new("TextButton")
+local ScriptBox = Instance.new("TextButton")
 local UDLOGS = Instance.new("Frame")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
 local CreditFrane = Instance.new("Frame")
 local TrashiezXploit = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
 local ImageLabel_2 = Instance.new("ImageLabel")
+local ScriptBoxE = Instance.new("Frame")
+local ScrollingFrame_3 = Instance.new("ScrollingFrame")
+local TextLabel_7 = Instance.new("TextLabel")
+local Title_2 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -67,7 +77,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.756281435, 0, 0.235294119, 0)
 TextLabel_2.Size = UDim2.new(0, 97, 0, 26)
 TextLabel_2.Font = Enum.Font.FredokaOne
-TextLabel_2.Text = "V  0.1.2"
+TextLabel_2.Text = "V  0.1.3"
 TextLabel_2.TextColor3 = Color3.fromRGB(227, 227, 227)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 33.000
@@ -138,7 +148,7 @@ Frame_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 Frame_3.BorderColor3 = Color3.fromRGB(76, 76, 76)
 Frame_3.BorderSizePixel = 3
 Frame_3.Position = UDim2.new(0, 0, 1, 0)
-Frame_3.Size = UDim2.new(0, 398, 0, 48)
+Frame_3.Size = UDim2.new(0, 398, 0, 90)
 
 Updatelogs.Name = "Update logs"
 Updatelogs.Parent = Frame_3
@@ -177,6 +187,18 @@ Credits.Font = Enum.Font.SourceSans
 Credits.Text = "Credits"
 Credits.TextColor3 = Color3.fromRGB(194, 194, 194)
 Credits.TextSize = 25.000
+
+ScriptBox.Name = "ScriptBox"
+ScriptBox.Parent = Frame_3
+ScriptBox.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+ScriptBox.BorderColor3 = Color3.fromRGB(90, 90, 90)
+ScriptBox.BorderSizePixel = 2
+ScriptBox.Position = UDim2.new(0.351758808, 0, 0.623397529, 0)
+ScriptBox.Size = UDim2.new(0, 119, 0, 29)
+ScriptBox.Font = Enum.Font.SourceSans
+ScriptBox.Text = "ScriptBox"
+ScriptBox.TextColor3 = Color3.fromRGB(194, 194, 194)
+ScriptBox.TextSize = 25.000
 
 UDLOGS.Name = "UDLOGS"
 UDLOGS.Parent = Frame
@@ -220,6 +242,30 @@ TextLabel_4.Font = Enum.Font.SourceSansBold
 TextLabel_4.Text = "new ui and changes."
 TextLabel_4.TextColor3 = Color3.fromRGB(212, 212, 212)
 TextLabel_4.TextSize = 34.000
+
+TextLabel_5.Parent = ScrollingFrame_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0291777197, 0, 0.310126573, 0)
+TextLabel_5.Size = UDim2.new(0, 357, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Update: 0.1.3"
+TextLabel_5.TextColor3 = Color3.fromRGB(212, 212, 212)
+TextLabel_5.TextSize = 34.000
+
+TextLabel_6.Parent = ScrollingFrame_2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.0291777197, 0, 0.449367076, 0)
+TextLabel_6.Size = UDim2.new(0, 357, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "Added Built in scriptbox."
+TextLabel_6.TextColor3 = Color3.fromRGB(212, 212, 212)
+TextLabel_6.TextSize = 34.000
 
 CreditFrane.Name = "CreditFrane"
 CreditFrane.Parent = Frame
@@ -282,38 +328,123 @@ ImageLabel_2.Position = UDim2.new(0.0185676385, 0, 0.451898783, 0)
 ImageLabel_2.Size = UDim2.new(0, 48, 0, 49)
 ImageLabel_2.Image = "http://www.roblox.com/asset/?id=17757765730"
 
+ScriptBoxE.Name = "ScriptBoxE"
+ScriptBoxE.Parent = Frame
+ScriptBoxE.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ScriptBoxE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptBoxE.BorderSizePixel = 0
+ScriptBoxE.Position = UDim2.new(0.0276381914, 0, 0.25431034, 0)
+ScriptBoxE.Size = UDim2.new(0, 377, 0, 158)
+ScriptBoxE.Visible = false
+
+ScrollingFrame_3.Parent = ScriptBoxE
+ScrollingFrame_3.Active = true
+ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_3.BackgroundTransparency = 1.000
+ScrollingFrame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame_3.BorderSizePixel = 0
+ScrollingFrame_3.Size = UDim2.new(0, 377, 0, 158)
+
+TextLabel_7.Parent = ScrollingFrame_3
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0477453582, 0, 0.189874187, 0)
+TextLabel_7.Size = UDim2.new(0, 340, 0, 41)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "local SpawnedCars = game:GetService(\"Workspace\").SpawnedCars\\n"
+TextLabel_7.TextColor3 = Color3.fromRGB(165, 165, 165)
+TextLabel_7.TextSize = 20.000
+TextLabel_7.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = ScrollingFrame_3
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0477453582, 0, 0, 0)
+Title_2.Size = UDim2.new(0, 340, 0, 50)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = "Wanna make your own washiez script, but your executor can't support explorer dex, or dont know how to script very well? use scriptblox!"
+Title_2.TextColor3 = Color3.fromRGB(165, 165, 165)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+TextLabel_8.Parent = ScrollingFrame_3
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.0477453582, 0, 0.309874177, 0)
+TextLabel_8.Size = UDim2.new(0, 340, 0, 41)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "--Discribing  All the Spawned cars which is a folder"
+TextLabel_8.TextColor3 = Color3.fromRGB(165, 165, 165)
+TextLabel_8.TextSize = 20.000
+TextLabel_8.TextWrapped = true
+
+TextLabel_9.Parent = ScrollingFrame_3
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.0477453582, 0, 0.459874034, 0)
+TextLabel_9.Size = UDim2.new(0, 340, 0, 41)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Lets say i wanna print out all the spawned cars in dev console"
+TextLabel_9.TextColor3 = Color3.fromRGB(165, 165, 165)
+TextLabel_9.TextSize = 20.000
+TextLabel_9.TextWrapped = true
+
+TextLabel_10.Parent = ScrollingFrame_3
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.0450928397, 0, 0.586840451, 0)
+TextLabel_10.Size = UDim2.new(0, 340, 0, 94)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "local SpawnedCars = game:GetService(\"Workspace\").SpawnedCars\\nfor _, SpawnedCars in pairs(SpawnedCars:GetChildren()) do\\nprint(SpawnedCars.Name)\\nend"
+TextLabel_10.TextColor3 = Color3.fromRGB(165, 165, 165)
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
 -- Scripts:
 
-local function WJBAHXM_fake_script() -- FS.LocalScript 
+local function LMBIMUP_fake_script() -- FS.LocalScript 
 	local script = Instance.new('LocalScript', FS)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/8N7-77/WashiezFlingScript/main/Fling'))()
 	end)
 end
-coroutine.wrap(WJBAHXM_fake_script)()
-local function FJBTR_fake_script() -- IYScript.LocalScript 
+coroutine.wrap(LMBIMUP_fake_script)()
+local function MBOYSU_fake_script() -- IYScript.LocalScript 
 	local script = Instance.new('LocalScript', IYScript)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(FJBTR_fake_script)()
-local function PAHMCA_fake_script() -- CX.LocalScript 
+coroutine.wrap(MBOYSU_fake_script)()
+local function FYWMLR_fake_script() -- CX.LocalScript 
 	local script = Instance.new('LocalScript', CX)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
 	end)
 end
-coroutine.wrap(PAHMCA_fake_script)()
-local function BHYIGR_fake_script() -- Updatelogs.LocalScript 
+coroutine.wrap(FYWMLR_fake_script)()
+local function QNCVQS_fake_script() -- Updatelogs.LocalScript 
 	local script = Instance.new('LocalScript', Updatelogs)
 
 	local udlogs = script.Parent.Parent.Parent.UDLOGS
 	local ScriptHub = script.Parent.Parent.Parent.ScriptHub
 	local CreditFrame = script.Parent.Parent.Parent.CreditFrane
+	local scriptbox = script.Parent.Parent.Parent.ScriptBoxE
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		if udlogs.Visible == false then
@@ -321,6 +452,7 @@ local function BHYIGR_fake_script() -- Updatelogs.LocalScript
 		udlogs.Visible = true
 			ScriptHub.Visible = false
 			CreditFrame.Visible = false
+			scriptbox.Visible = false	
 		else
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "Error";
@@ -333,13 +465,14 @@ local function BHYIGR_fake_script() -- Updatelogs.LocalScript
 	end)
 	
 end
-coroutine.wrap(BHYIGR_fake_script)()
-local function GZVZSL_fake_script() -- ScriptHubB.LocalScript 
+coroutine.wrap(QNCVQS_fake_script)()
+local function TLQIC_fake_script() -- ScriptHubB.LocalScript 
 	local script = Instance.new('LocalScript', ScriptHubB)
 
 	local udlogs = script.Parent.Parent.Parent.UDLOGS
 	local ScriptHub = script.Parent.Parent.Parent.ScriptHub
 	local CreditFrame = script.Parent.Parent.Parent.CreditFrane
+	local scriptbox = script.Parent.Parent.Parent.ScriptBoxE
 	
 	
 	
@@ -348,6 +481,7 @@ local function GZVZSL_fake_script() -- ScriptHubB.LocalScript
 			udlogs.Visible = false
 			ScriptHub.Visible = true
 			CreditFrame.Visible = false
+	scriptbox.Visible = false
 		else
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "Error";
@@ -359,13 +493,14 @@ local function GZVZSL_fake_script() -- ScriptHubB.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GZVZSL_fake_script)()
-local function OKSUB_fake_script() -- Credits.LocalScript 
+coroutine.wrap(TLQIC_fake_script)()
+local function CYTVMO_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	local CreditFrame = script.Parent.Parent.Parent.CreditFrane
 	local ScriptHub = script.Parent.Parent.Parent.ScriptHub
 	local udlogs = script.Parent.Parent.Parent.UDLOGS
+	local scriptbox = script.Parent.Parent.Parent.ScriptBoxE
 	
 	
 	
@@ -374,6 +509,7 @@ local function OKSUB_fake_script() -- Credits.LocalScript
 			CreditFrame.Visible = true
 			ScriptHub.Visible = false
 			udlogs.Visible = false
+			scriptbox.Visible = false
 		else
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "Error";
@@ -385,8 +521,35 @@ local function OKSUB_fake_script() -- Credits.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(OKSUB_fake_script)()
-local function LZSXL_fake_script() -- Frame.Drag 
+coroutine.wrap(CYTVMO_fake_script)()
+local function JHMYKIB_fake_script() -- ScriptBox.LocalScript 
+	local script = Instance.new('LocalScript', ScriptBox)
+
+	local CreditFrame = script.Parent.Parent.Parent.CreditFrane
+	local ScriptHub = script.Parent.Parent.Parent.ScriptHub
+	local udlogs = script.Parent.Parent.Parent.UDLOGS
+	local scriptbox = script.Parent.Parent.Parent.ScriptBoxE
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if scriptbox.Visible == false then
+			scriptbox.Visible = true
+			CreditFrame.Visible = false
+			udlogs.Visible = false
+			ScriptHub.Visible = false
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Error";
+				Text = "Cannot open ScriptBox if its already open!";
+				Icon = "";
+	
+	
+			})
+		end
+	end)
+end
+coroutine.wrap(JHMYKIB_fake_script)()
+local function BKSCDLW_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -429,4 +592,4 @@ local function LZSXL_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(LZSXL_fake_script)()
+coroutine.wrap(BKSCDLW_fake_script)()
